@@ -14,3 +14,5 @@ This is a Selenium automation framework built using:
 - src/main/java - Framework code
 - src/test/java - Test cases
 - pom.xml - Maven dependencies
+
+- Updated by teammate Rahul
