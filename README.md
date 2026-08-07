@@ -17,4 +17,8 @@ This is a Selenium automation framework built using:
 
 - Updated by teammate Rahul
 
+
+Search automation is in progress
+
 Login automation has been completed
+
