@@ -16,3 +16,5 @@ This is a Selenium automation framework built using:
 - pom.xml - Maven dependencies
 
 - Updated by teammate Rahul
+
+Login automation has been completed
