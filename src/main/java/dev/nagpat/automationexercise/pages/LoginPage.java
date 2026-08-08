@@ -38,6 +38,7 @@ public class LoginPage extends BasePage {
 		return flag;
 	}
 
+	// Login with valid credentials
 	public void login(String email, String password) {
 		utils.enterTxt(emailLocator, email);
 		utils.enterTxt(passwordLocator, password);
