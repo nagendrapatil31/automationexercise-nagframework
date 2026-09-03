@@ -31,11 +31,11 @@ public class CartPage extends BasePage {
 	private By proceedToCheckoutButton = By.xpath("//a[@class=\"btn btn-default check_out\"]");
 	private By floatingAdClose = By.xpath("//button[contains(@class,'close')] | //div[@role='button']");
 	private By RegisterLoginLink = By.xpath("//a/u[text()='Register / Login']");
-	
-	
+
 	// Is cart page visible
 	public boolean isCartPageVisible() {
-		return driver.getCurrentUrl().equals("https://automationexercise.com/view_cart");
+		System.out.println("Current URL: " + driver.getCurrentUrl());
+		return driver.getCurrentUrl().equals("https://www.automationexercise.com/view_cart");
 	}
 
 	// Hover and add to cart
