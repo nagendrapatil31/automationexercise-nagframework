@@ -36,6 +36,7 @@ public class HomePage extends BasePage {
 	private By floatingAdClose = By.xpath("//button[contains(@class,'close')] | //div[@role='button']");
 
 	public boolean isHomepageVisible() {
+		 System.out.println("Current URL: " + driver.getCurrentUrl());
 		return driver.getCurrentUrl().equals("https://www.automationexercise.com/");
 	}
 
