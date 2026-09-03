@@ -57,7 +57,7 @@ public class SeleniumUtils {
 	}
 
 	// we are using Overloading concept for safeClick and creating 2 methods for
-	// both parameters and without 'adCloseLocator' parameter.
+	// both parameters with and without 'adCloseLocator' parameter.
 	// Safe Click: Overload Method 1
 	public void safeClick(By locator, By adCloseLocator) {
 

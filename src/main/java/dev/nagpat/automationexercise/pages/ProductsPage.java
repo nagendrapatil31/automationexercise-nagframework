@@ -38,6 +38,7 @@ public class ProductsPage extends BasePage {
 	public void viewProduct() {
 		utils.scrollToElementCentered(viewProduct1Locator);
 		utils.safeClick(viewProduct1Locator);
+		System.out.println("URL after clicking product: " + driver.getCurrentUrl());
 		utils.waitForUrlContains("product_details");
 	}
 

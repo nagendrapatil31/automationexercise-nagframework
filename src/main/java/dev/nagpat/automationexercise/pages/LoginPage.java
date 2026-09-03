@@ -73,10 +73,11 @@ public class LoginPage extends BasePage {
 	}
 
 	public boolean isLoggedInAsVisible() {
-		String username = utils.getText(loggedInName);
+		
 		Boolean flag = utils.isDisplayed(loggedInAsLocator);
 
 		if (flag) {
+			String username = utils.getText(loggedInName);
 			System.out.println("Logged in as:" + username + " is visible");
 		} else {
 			System.out.println("Username is NOT Displayed");
