@@ -1,5 +1,7 @@
 package dev.nagpat.automationexercise.tests;
 
+import java.io.File;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,7 +27,11 @@ public class ContactUsTest extends Base {
 
 	@Test
 	public void contactUsFormFilling() throws InterruptedException {
-		String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\cody.jpg";
+		String filePath = System.getProperty("user.dir")
+		        + File.separator + "src"
+		        + File.separator + "main"
+		        + File.separator + "resources"
+		        + File.separator + "cody.jpg";
 		cPage.ContactUsForm("nag", "pat@g", "testing", "testing- Contact us form", filePath);
 		Assert.assertTrue(cPage.isSuccessMessageVisible());
 		cPage.clickHomeButton();
