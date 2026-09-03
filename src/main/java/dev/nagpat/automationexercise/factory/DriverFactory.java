@@ -20,7 +20,10 @@ public class DriverFactory {
 		if ("chrome".equalsIgnoreCase(browser)) {
 
 			ChromeOptions options = new ChromeOptions();
-
+			
+			options.addArguments("--headless");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
 			// Disables browser permission popups like like examples: “Allow notifications?”
 			// “example.com wants to show notifications” ..etc
 			options.addArguments("--disable-notifications");
