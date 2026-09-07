@@ -77,8 +77,6 @@ public class SeleniumUtils {
 
 				element.click();
 
-				handleGoogleVignetteAd();
-
 				return;
 
 			} catch (Exception e) {
