@@ -18,6 +18,9 @@ This is a Selenium automation framework built using:
 - Updated by teammate Rahul
 
 
+Resusable Testing Login: email: nagautomation@gmail.com | password: Nag@1234
+
+
 Search automation is in progress
 
 Login automation has been completed

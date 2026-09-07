@@ -26,11 +26,10 @@ public class LoginValidDataTest extends Base {
 	@Test
 	public void login() {
 		Assert.assertTrue(lPage.isLoginHeaderVisible());
-		lPage.login("pat@g", "1234");
+		lPage.login("nagautomation@gmail.com", "Nag@1234");
+		System.out.println("URL after login: " + DriverManager.getDriver().getCurrentUrl());
 		Assert.assertTrue(lPage.isLoggedInAsVisible());
-		lPage.deletingAccount();
-		Assert.assertTrue(lPage.isDeletedAccountVisible());
-		lPage.clickContinueAfterDelete();
+		lPage.logout();
 	}
 
 	@AfterMethod
