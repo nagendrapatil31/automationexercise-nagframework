@@ -178,11 +178,13 @@ public class SeleniumUtils {
 
 	// Verify if WebElement is Displayed
 	public boolean isDisplayed(By locator) {
-		try {
-			return getElement(locator).isDisplayed();
-		} catch (Exception e) {
-			return false;
-		}
+	    try {
+	        return getElement(locator).isDisplayed();
+	    } catch (Exception e) {
+	        System.out.println("Element not displayed: " + locator);
+	        System.out.println("Reason: " + e.getMessage());
+	        return false;
+	    }
 	}
 
 	// Popup Handling

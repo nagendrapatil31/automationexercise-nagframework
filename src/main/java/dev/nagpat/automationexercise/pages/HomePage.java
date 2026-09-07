@@ -46,7 +46,6 @@ public class HomePage extends BasePage {
 
 	public void clickProductsLink() {
 		utils.safeClick(productsLinkLocator);
-		utils.handleGoogleVignetteAd();
 	}
 
 	public void clickCartsLink() {
