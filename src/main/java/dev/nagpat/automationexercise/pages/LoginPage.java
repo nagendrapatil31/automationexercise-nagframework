@@ -43,6 +43,7 @@ public class LoginPage extends BasePage {
 		utils.enterTxt(emailLocator, email);
 		utils.enterTxt(passwordLocator, password);
 		utils.click(loginButtonLocator);
+		System.out.println("URL after login click: " + driver.getCurrentUrl());	
 	}
 
 	public boolean isLoginFailureMessageVisible() {
