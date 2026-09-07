@@ -27,7 +27,8 @@ public class RegisterUserTest extends Base {
 
 	@Test
 	public void registration(){
-		rPage.signup("nag", "pat@g");
+		String email = "nag" + System.currentTimeMillis() + "@gmail.com";
+		rPage.signup("nag", email);
 		rPage.fillingAccountDetails("1234", "12", "4", "2000", "nag", "pat", "nagpat", "ads1", "ads2", "India",
 				"kar", "beng", "12345", "1234567890");
 	}

@@ -48,6 +48,7 @@ public class RegisterUserPage extends BasePage {
 		utils.enterTxt(signupEmailLocator, email);
 		utils.popupHandler(popup1Locator);
 		utils.safeClick(signupButton);
+		System.out.println("URL after Signup click: " + driver.getCurrentUrl());
 	}
 
 	public void fillingAccountDetails(String password, String day, String month, String year, String firstname,
